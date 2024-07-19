@@ -48,13 +48,13 @@ public class Arrays {
 	public static boolean sorted(int[] arr) {
       boolean result=true;
 		//checking in ascending order
+   
 		for(int i=0;i<arr.length;i++) {
-			if( arr[i]<=arr[i+1]  ) {
+			
+			if(i<arr.length-1 && arr[i]<=arr[i+1]) {
 				result=true;
 			}
-			else {
-				result=false;
-			}
+			
 		}
 		return result;
 		
@@ -75,12 +75,12 @@ public class Arrays {
 	public static void main(String[] args) {
 
 //		int[] arr = new int[10];
-		int[] arr= {10,15,12,4,5,48,42,69,78,45};
-//		int[] arr= {10,15,18,48,69,78,85};
+//		int[] arr= {10,15,12,4,5,48,42,69,78,45};
+		int[] arr= {10,15,18,48,69,78,85};
 
 //		insertArr(arr);
-		System.out.println("Total number of Occurance : " +countOfOccurance(arr, 12));
-		System.out.println("Total number of greather than : " +greater(arr, 12));
+//		System.out.println("Total number of Occurance : " +countOfOccurance(arr, 12));
+//		System.out.println("Total number of greather than : " +greater(arr, 12));
         System.out.println("Array is sorted :"+sorted(arr));
 //		display(arr);
 	}
